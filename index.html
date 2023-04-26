@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo img/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div>
+            <a href="index.html">
+                <img src="/img/logo img/engamingLogo.png" alt="">
+            </a>   
+        </div>
+        <div>
+            <button id="idiomasBtn">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span class="separador"></span>
+                <p>Idiomas</p>
+            </button>
+        </div>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar">
+            <i class="searchInputIcon fa fa-search"></i>          
+        </div>
+        <div class="iconos">
+            <button id="panelBtn">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+            </button>
+            <button id="panelBtn2">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </button>
+            <button id="panelBtn3" class="register">
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""><p>Registrarse</p></a>
+                <span class="separador"></span>
+            </button>
+            <button id="panelBtn4">
+                <a href=""><p>Iniciar sesion</p></a>
+            </button>
+                        
+        </div>
+        
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Juegos</a>
+            <ul class="submenu">
+                <li><a href="#">Juego 1</a></li>
+                <li><a href="#">Juego 2</a></li>
+                <li><a href="#">Juego 3</a></li>
+              </ul>
+            </li>
+        <li><a href="#">Tarjetas de regalo</a></li>
+        <li><a href="#">Puntos de juegos</a></li>
+        <li><a href="#">Xbox</a></li>
+        <li><a href="#">PSN</a></li>
+        <li><a href="#">Nintendo</a></li>
+        <li><a href="#">PC</a></li>
+        <li><a href="#">Contacto</a></li>      
+      </ul>
+</nav>
+
+<!-- Slideshow container -->
+
+<div class="containerTwo">
+  <div class="slide slide-1 active" onclick="handleClick(), handleClickStart()">
+  <h3></h3>
+</div>
+  <div class="slide slide-2">
+    <h3></h3>
+  </div>
+  <div class="slide slide-3">
+    <h3></h3>
+  </div>
+  <div class="slide slide-4">
+    <h3></h3>
+  </div>
+</div>
+
+
+  
+  <!-- The dots/circles -->
+  
+    <section>
+<h1>Lo más nuevo</h1>
+<div class="containerThree">
+ <div class="item game1">
+    <div class="gameInfo"><p class="gameTitle">Mortal Kombat 11 | Edición Steam | GLOBAL</p>
+    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    </div>
+ </div>
+ <div class="item game2">
+    <div class="gameInfo"><p class="gameTitle">The Last Of Us | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">22,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+ <div class="item game3">
+    <div class="gameInfo"><p class="gameTitle">Dead Island 2 | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        </div>
+ </div>
+ <div class="item game4">
+    <div class="gameInfo"><p class="gameTitle">Stars Wars: Jedi Survivour | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+ <div class="item game5">
+    <div class="gameInfo"><p class="gameTitle">Dead By Daylight | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        </div>
+ </div>
+ <div class="item game6">
+    <div class="gameInfo"><p class="gameTitle">Dragon Ball Z: Kakarot | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        </div>
+ </div>
+ <div class="item game7">
+    <div class="gameInfo"><p class="gameTitle">Spiderman: Miles Morales | Edición Steam | GLOBAL</p>
+        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+ <div class="item game8">
+    <div class="gameInfo"><p class="gameTitle">NBA 2k23 | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+ <div class="item game9">
+    <div class="gameInfo"><p class="gameTitle">Dying Light 2 | Edición Steam | GLOBAL</p>
+        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+ <div class="item game10">
+    <div class="gameInfo"><p class="gameTitle">Age Of Empires 4 | Edición Steam | GLOBAL</p>
+        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+ </div>
+</div>
+    </section>
+
+    <div class="carousel-img">
+        <div><img src="/img/giftCard img/playstation-340w.webp" alt=""></div>
+        <div><img src="/img/giftCard img/amazon-340w.webp" alt=""></div>
+        <div><img src="/img/giftCard img/nintendo-340w.webp" alt=""></div>
+        <div><img src="/img/giftCard img/steam-340w.webp" alt=""></div>
+        <div><img src="/img/giftCard img/xbox-340w.webp" alt=""></div>
+    </div>
+
+    <section>
+        <h1>Lo más vendido</h1>
+        <div class="containerThree">
+         <div class="item game11">
+            <div class="gameInfo"><p class="gameTitle">Batman Arkham Origins | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game12">
+            <div class="gameInfo"><p class="gameTitle">Crash Bandicoot 4: I'ts About Time | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game13">
+            <div class="gameInfo"><p class="gameTitle">CyberPunk 2077 | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game14">
+            <div class="gameInfo"><p class="gameTitle">Devil May Cry 5 | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game15">
+            <div class="gameInfo"><p class="gameTitle">Grand Theft Auto 5 | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game16">
+            <div class="gameInfo"><p class="gameTitle">Far Cry 5 | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game17">
+            <div class="gameInfo"><p class="gameTitle">Hogwarts Legacy | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game18">
+            <div class="gameInfo"><p class="gameTitle">Left 4 Dead 2 | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game19">
+            <div class="gameInfo"><p class="gameTitle">Terraria | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+         <div class="item game20">
+            <div class="gameInfo"><p class="gameTitle">Need For Speed: Heat | Edición Steam | GLOBAL</p>
+                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+         </div>
+        </div>
+            </section>    
+
+    <script src="script.js"></script>
+</body>
+</html>
