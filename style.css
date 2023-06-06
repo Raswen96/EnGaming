@@ -37,7 +37,6 @@ body {
   header{
     background: linear-gradient(to bottom right, #292947 0%, #3e1596 100%);
     height: 90px;
-    backdrop-filter: blur(50px);
     padding: 0 20px;
   }
 
@@ -247,7 +246,7 @@ nav ul ul.submenu li a {
 
 .slide {
   position: relative;
-  height: 62vh;
+  height: 52vh;
   cursor: pointer;
   color: #fff;
   flex: 1;
@@ -255,7 +254,7 @@ nav ul ul.submenu li a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  transition: all 500ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .slide::before {
@@ -283,7 +282,7 @@ nav ul ul.submenu li a {
 }
 
 .slide.active {
-  flex: 4.4;
+  flex: 5.4;
 }
 
 .slide.active h3 {
@@ -292,44 +291,44 @@ nav ul ul.submenu li a {
 }
 
 .slide-1 {
-  background-image: url(/img/header-slider-img/residentEvil4Mini.jpg);
+  background-image: url(/img/middle-slider-banner/mini-middle-banner-slider1.jpg);
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.466);
   z-index: 4;
 }
 
 .slide-2 {
-  background-image: url(/img/header-slider-img/minecraftLegensMini2.jpg);
+  background-image: url(/img/middle-slider-banner/mini-middle-banner-slider2.jpg);
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.466);
   z-index: 3;
 }
 
 .slide-3 {
-  background-image: url(/img/header-slider-img/ValorantMini.jpg);
+  background-image: url(/img/middle-slider-banner/mini-middle-banner-slider3.jpg);
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.466);
   z-index: 2;
 }
 
 .slide-4 {
-  background-image: url(/img/header-slider-img/callOfDutyMini.jpg);
+  background-image: url(/img/middle-slider-banner/mini-middle-banner-slider5.jpg);
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.466);
   z-index: 1;
 }
 
 
 .slide-1.active {
-  background-image: url(/img/header-slider-img/residentEvil4Portrait.jpg);
+  background-image: url(/img/middle-slider-banner/middle-banner-slider1.jpg);
 }
 
 .slide-2.active {
-  background-image: url(/img/header-slider-img/minecraftLegendsPortrait.jpg);
+  background-image: url(/img/middle-slider-banner/middle-banner-slider2.jpg);
 }
 
 .slide-3.active {
-  background-image: url(/img/header-slider-img/valorantPortrait.jpg);
+  background-image: url(/img/middle-slider-banner/middle-banner-slider3.jpg);
 }
 
 .slide-4.active {
-  background-image: url(/img/header-slider-img/callOfDutyPortrait.jpg);
+  background-image: url(/img/middle-slider-banner/middle-banner-slider5.jpg);
 }
 
 /*Slider Fin*/
@@ -349,11 +348,126 @@ nav ul ul.submenu li a {
   background-repeat: no-repeat;
   height: calc(335px * 1.3333);
   position: relative;
-  box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.514);
+  box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.123);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000081;
+  opacity: 0;
+  transition:  0.3s ease-in-out;
+
+}
+
+.item:hover::before {
+  opacity: 0.5;
+}
+
+.item:hover .icon-selector {
+  opacity: 1;
+}
+
+
+.item:hover .icon-selector,
+.item:hover .icon-selector.two {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.icon-selector {
+  
+  height: 50px;
+  background-color: none;
+  width: 50px;
+  border: white solid 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:1;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  
+  transform: translateX(60px);
+}
+
+.icon-selector.two {
+ top: 54px;
+}
+
+.icon-selector:hover {
+  background-color: #f5f5f557;
+  
+}
+
+.icon-selector.active {
+  background-color: #00cf9f;
+  border: none;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-selector.two.active {
+  background-color: #00cf9f;
+  border: none;
+  opacity: 1;
+ }
+
+.icon-selector.active:hover {
+  background-color: #f5f5f557;
+  border: white solid 1px;
+  opacity: 1;
+}
+
+
+
+/* animacion de fill para botones de deseados y compra*/
+
+/* .icon-selector::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  background-color: #00cf9f;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-selector.active:hover::before {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+} */
+
+.item .fa-heart {
+  
+  
+  font-size: 22px;
+  z-index: 1;
+  color: white;
+}
+
+.fa-cart-shopping {
+  
+  
+  font-size: 22px;
+  z-index: 1;
+  color: white;
 }
 
 .gameInfo {
@@ -367,9 +481,10 @@ height: 35%;
 
 .gameInfo .gameTitle {
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0 0 7px 0;
-  font-weight: bold;
+  font-weight: bolder;
+  line-height: 20px;
   font-family: sans-serif;
 }
 
@@ -417,10 +532,20 @@ font-weight: bold;
 
 .game1 {
   background-image: url(/img/gameList/mortalKombat11.jpeg);
+  transition: background-image 1s ease-in-out;
 }
+
+
+
+
+
+
+
 
 .game2 {
   background-image: url(/img/gameList/theLastOfUs.jpg);
+  transition: background-image 1s ease-in-out;
+
 }
 
 .game3 {
@@ -494,28 +619,235 @@ font-weight: bold;
 .game20 {
   background-image: url(/img/gameList/needForSpeedHeat.jpeg);
 }
+
+.game21 {
+  background-image: url(/img/gameList/castlevaniaLordOfShadow.jpg);
+}
+
+.game22 {
+  background-image: url(/img/gameList/tombRaider.jpg);
+}
+
+.game23 {
+  background-image: url(/img/gameList/unchartedLegacyThieves.jpg);
+}
+
+.game24 {
+  background-image: url(/img/gameList/tekken7.jpg);
+}
+
+.game25 {
+  background-image: url(/img/gameList/StreetFighter6.jpg);
+}
+
+.game26 {
+  background-image: url(/img/gameList/darkSouls3.jpg);
+}
+
+.game27 {
+  background-image: url(/img/gameList/SekiroShadowsDieTwice.jpg);
+}
+
+.game28 {
+  background-image: url(/img/gameList/callOfDutyBlackOps.jpg);
+}
+
+.game29 {
+  background-image: url(/img/gameList/minecraft.webp);
+}
+
+.game30 {
+  background-image: url(/img/gameList/diablo.jpg);
+}
+
+
+
 .carousel-img {
+  position: relative;
   display: flex;
   width: 100%;
-  margin: 60px 0 0 0;
-  background-color: #610bc4;
+  margin: 120px 0 120px 0;
+  background-color: #511fbb;
   justify-content: center;
   align-items: center;
   height: 250px;
+  z-index: 1;
 }
 
 .carousel-img div {
   margin: 0 20px;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
   cursor: pointer;
 }
 
+
+
 .carousel-img div:hover {
   transform: scale(1.1);
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .carousel-img img {
   height: 150px;
   border-radius: 10px;
+}
+
+footer {
+  background:#320692;
+}
+
+.footer-end {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 260px;
+  padding: 50px 50px 0 50px;
+
+}
+
+.footer-element {
+color: white;
+font-family: sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 10px;
+
+}
+
+.footer-element h3 {
+  padding: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.footer-element .list-element {
+  margin: 15px 0 0 0;
+}
+
+
+.footer-element ul li {
+  list-style: none;
+  margin: 10px 0 ;
+  font-weight:lighter;
+  font-family: sans-serif;
+  text-transform:capitalize;
+  font-size: 12px;
+}
+
+.footer-element ul li a:hover {
+  color: rgb(247, 211, 8);
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media li i {
+  margin-right: 15px;
+}
+
+.footer-element i {
+  font-size: 20px;
+}
+
+.main-contact-form {
+  display: flex;
+}
+
+.contact-form {
+  width: 590px;
+  padding: 50px;
+}
+
+.contact-form-title {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+
+.contact-form form {
+  display: flex;
+}
+
+.contact-form form input {
+  height: 40px;
+  width: 500px;
+  outline: none;
+  border: 1px solid white;
+  background: transparent;
+  padding: 0 0 0 10px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-right: 0;
+  font-size: 15px;
+}
+
+.contact-form form button {
+  border: white 1px solid;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.contact-form form button:hover {
+  border: rgb(247, 211, 8) 1px solid;
+  background:#16043d;
+}
+
+.our-partners {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+  margin: 25px 0 0 0;
+}
+
+.partners-grid {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+}
+
+.partners-grid img {
+  height: 100px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+color: white;
+
+font-family: sans-serif;
+font-weight: bold;
+  width: 100%;
+  font-size: 12px;
+}
+
+
+
+i.fas.fa-chevron-down {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 5px;
+}
+
+
+/* Estilo para el icono chevron */
+nav ul li > a > .fas {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li:hover > a > .fas {
+  color: rgb(247, 211, 8);
+  transform: scaleY(-1);
+  transform-origin: center;
+}
+
+nav ul li:hover > a > .fas.fa-chevron-up {
+  font-size: 14px;
+  margin-left: 5px;
+  transform: scaleY(1);
+  transform-origin: center;
 }

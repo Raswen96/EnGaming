@@ -237,3 +237,71 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+const iconSelectors = document.querySelectorAll('.icon-selector');
+
+iconSelectors.forEach(function(iconSelector) {
+  iconSelector.addEventListener('click', function() {
+    if (iconSelector.classList.contains('active')) {
+      // Si la clase 'active' está presente, remuévela para volver al estado normal
+      iconSelector.classList.remove('active');
+    } else {
+      // Si la clase 'active' no está presente, agrégala
+      iconSelector.classList.add('active');
+    }
+  });
+});
+
+// var contenedor = document.querySelector('.game1');
+// var imagenes = ['/img/gameList/mortalKombat11.jpeg', '/img/gameHoverGallery/mortal1.png', '/img/gameHoverGallery/mortal2.png', '/img/gameHoverGallery/mortal3.png', '/img/gameHoverGallery/mortal4.jpg'];
+// var i = 0;
+// var intervalID;
+
+// function cambiarImagen() {
+//   contenedor.style.backgroundImage = 'url(' + imagenes[i] + ')';
+//   i = (i + 1) % imagenes.length;
+//   intervalID = setTimeout(cambiarImagen, 4000);
+// }
+
+// contenedor.addEventListener('mouseenter', function() {
+//   i = 1;
+//   cambiarImagen();
+// });
+
+// contenedor.addEventListener('mouseleave', function() {
+//   clearTimeout(intervalID);
+//   i = 0;
+//   contenedor.style.backgroundImage = 'url(' + imagenes[i] + ')';
+// });
+
+
+function agregarEfectoHover(contenedor, imagenes) {
+  var i = 0;
+  var intervalID;
+
+  function cambiarImagen() {
+    contenedor.style.backgroundImage = 'url(' + imagenes[i] + ')';
+    i = (i + 1) % imagenes.length;
+    intervalID = setTimeout(cambiarImagen, 4000);
+  }
+
+  contenedor.addEventListener('mouseenter', function() {
+    i = 1;
+    cambiarImagen();
+  });
+
+  contenedor.addEventListener('mouseleave', function() {
+    clearTimeout(intervalID);
+    i = 0;
+    contenedor.style.backgroundImage = 'url(' + imagenes[i] + ')';
+  });
+}
+
+var game1 = document.querySelector('.game1');
+var game1_imagenes = ['/img/gameList/mortalKombat11.jpeg', '/img/gameHoverGallery/mortal1.png', '/img/gameHoverGallery/mortal2.png', '/img/gameHoverGallery/mortal3.png', '/img/gameHoverGallery/mortal4.jpg'];
+agregarEfectoHover(game1, game1_imagenes);
+
+var game2 = document.querySelector('.game2');
+var game2_imagenes = ['/img/gameList/theLastOfUs.jpg', '/img/gameHoverGallery/tlou1.png', '/img/gameHoverGallery/tlou2.png', '/img/gameHoverGallery/tlou3.png', '/img/gameHoverGallery/tlou4.jpg'];
+agregarEfectoHover(game2, game2_imagenes);
