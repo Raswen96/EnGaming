@@ -305,3 +305,18 @@ agregarEfectoHover(game1, game1_imagenes);
 var game2 = document.querySelector('.game2');
 var game2_imagenes = ['/img/gameList/theLastOfUs.jpg', '/img/gameHoverGallery/tlou1.png', '/img/gameHoverGallery/tlou2.png', '/img/gameHoverGallery/tlou3.png', '/img/gameHoverGallery/tlou4.jpg'];
 agregarEfectoHover(game2, game2_imagenes);
+
+document.addEventListener("DOMContentLoaded", function() {
+  var iconSelectors = document.querySelectorAll(".icon-selector");
+  var message = document.getElementById("message");
+  
+  for (var i = 0; i < iconSelectors.length; i++) {
+    iconSelectors[i].addEventListener("click", function() {
+      message.classList.add("message-visible");
+      setTimeout(function() {
+        message.classList.remove("message-visible");
+      }, 4000);
+    });
+  }
+});
+
