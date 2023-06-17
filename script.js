@@ -306,17 +306,120 @@ var game2 = document.querySelector('.game2');
 var game2_imagenes = ['/img/gameList/theLastOfUs.jpg', '/img/gameHoverGallery/tlou1.png', '/img/gameHoverGallery/tlou2.png', '/img/gameHoverGallery/tlou3.png', '/img/gameHoverGallery/tlou4.jpg'];
 agregarEfectoHover(game2, game2_imagenes);
 
+
+// Mensaje de aviso de agregado a favoritos y carritos de compras
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var iconSelectors = document.querySelectorAll(".icon-selector");
+//   var message = document.getElementById("message");
+  
+//   for (var i = 0; i < iconSelectors.length; i++) {
+//     iconSelectors[i].addEventListener("click", function() {
+//       message.classList.add("message-visible");
+//       setTimeout(function() {
+//         message.classList.remove("message-visible");
+//       }, 4000);
+//     });
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var iconSelectors = document.querySelectorAll(".icon-selector.one");
+//   var message = document.querySelector(".messageOne");
+//   var timerId;
+  
+//   for (var i = 0; i < iconSelectors.length; i++) {
+//     iconSelectors[i].addEventListener("click", function() {
+//       message.classList.add("message-visible");
+//       clearTimeout(timerId);
+//       timerId = setTimeout(function() {
+//         message.classList.remove("message-visible");
+//       }, 2500);
+//     });
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var iconSelectors = document.querySelectorAll(".icon-selector");
+//   var messageOne = document.querySelector(".messageOne");
+//   var messageTwo = document.querySelector(".messageTwo");
+//   var timerIdOne;
+//   var timerIdTwo;
+
+//   for (var i = 0; i < iconSelectors.length; i++) {
+//     iconSelectors[i].addEventListener("click", function() {
+//       if (this.classList.contains("one")) {
+//         messageOne.classList.add("message-visible");
+//         clearTimeout(timerIdOne);
+//         timerIdOne = setTimeout(function() {
+//           messageOne.classList.remove("message-visible");
+//         }, 2500);
+//       } else if (this.classList.contains("two")) {
+//         messageTwo.classList.add("message-visible");
+//         clearTimeout(timerIdTwo);
+//         timerIdTwo = setTimeout(function() {
+//           messageTwo.classList.remove("message-visible");
+//         }, 2500);
+//       }
+//     });
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var iconSelectors = document.querySelectorAll(".icon-selector");
+//   var favoriteMessage = document.querySelector(".favorite-message");
+//   var cartMessage = document.querySelector(".cart-message");
+//   var favoriteTimerId;
+//   var cartTimerId;
+
+//   for (var i = 0; i < iconSelectors.length; i++) {
+//     iconSelectors[i].addEventListener("click", function() {
+//       if (this.classList.contains("one")) {
+//         favoriteMessage.classList.add("favorite-visible");
+//         clearTimeout(favoriteTimerId);
+//         favoriteTimerId = setTimeout(function() {
+//           favoriteMessage.classList.remove("favorite-visible");
+//         }, 2500);
+//       } else if (this.classList.contains("two")) {
+//         cartMessage.classList.add("cart-visible");
+//         clearTimeout(cartTimerId);
+//         cartTimerId = setTimeout(function() {
+//           cartMessage.classList.remove("cart-visible");
+//         }, 2500);
+//       }
+//     });
+//   }
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
   var iconSelectors = document.querySelectorAll(".icon-selector");
-  var message = document.getElementById("message");
-  
+  var favoriteMessage = document.querySelector(".favorite-message");
+  var cartMessage = document.querySelector(".cart-message");
+  var favoriteTimerId;
+  var cartTimerId;
+
   for (var i = 0; i < iconSelectors.length; i++) {
     iconSelectors[i].addEventListener("click", function() {
-      message.classList.add("message-visible");
-      setTimeout(function() {
-        message.classList.remove("message-visible");
-      }, 4000);
+      if (this.classList.contains("one")) {
+        favoriteMessage.classList.add("favorite-visible");
+        cartMessage.style.zIndex = 10; // Actualiza el valor de z-index para cart-message
+        favoriteMessage.style.zIndex = 20; // Actualiza el valor de z-index para favorite-message
+        clearTimeout(favoriteTimerId);
+        favoriteTimerId = setTimeout(function() {
+          favoriteMessage.classList.remove("favorite-visible");
+        }, 2500);
+      } else if (this.classList.contains("two")) {
+        cartMessage.classList.add("cart-visible");
+        favoriteMessage.style.zIndex = 10; // Actualiza el valor de z-index para favorite-message
+        cartMessage.style.zIndex = 20; // Actualiza el valor de z-index para cart-message
+        clearTimeout(cartTimerId);
+        cartTimerId = setTimeout(function() {
+          cartMessage.classList.remove("cart-visible");
+        }, 2500);
+      }
     });
   }
 });
+
 
