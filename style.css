@@ -114,7 +114,7 @@ body {
 /* Inicio de header y barra de navegación */  
 
   header{
-    background: #290f61 ;
+    background: transparent;
     height: 90px;
     padding: 0 20px;
   }
@@ -181,7 +181,7 @@ width: 1px;
     font-size: 23px;
     border-radius: 50px;
     border: rgba(95, 95, 99, 0.192) 0.5px solid;
-    background: linear-gradient(to bottom right, #292947 0%, #2a135a 100%);
+    background:  #452194 ;
     color: white;
     transition: 0.3s;
     font-weight: bold;
@@ -194,7 +194,7 @@ width: 1px;
 
   header input:focus {
     outline: none;
-    box-shadow: 0 0 1px 0 #292947,  0 0 1px 0 #610bc4,  0 0 2px 2px #5b02ff, 0 0 2px 0 #fff; 
+    box-shadow: 0 0 1px 0 #0000ff,  0 0 1px 0 #4c00ff,  0 0 2px 2px #5b02ff, 0 0 2px 0 #fff; 
     transition: 0.3s;
 
   }
