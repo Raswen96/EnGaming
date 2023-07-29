@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+  <div class="burgerDropMenu">
+        
+    <div class="dropMenuHeader">
+        <div class="dropMenuLogo">
+<img src="/img/logo img/engamingLogo.png" alt="">
+        </div>
+        <div class="close-menu">
+            <i class="fa-solid fa-xmark close-icon2"></i>
+        </div>
+    </div>
+    <div class="pruebaEstilo"></div>
+    <div class="burgerDropMenuList">
+        <ul>
+            <li class="lista">TIENDA <i class="fas fa-chevron-down"></i></li>
+            <li>JUEGOS <i class="fas fa-chevron-down"></i></li>
+            <li>TARJETAS DE REGALO <i class="fas fa-chevron-down"></i></li>
+            <li>PUNTOS DE JUEGOS <i class="fas fa-chevron-down"></i></li>
+        </ul>
+    </div>
+   
+</div>
+
+<style>
+
+.burgerDropMenu {
+  position: relative;
+  height: 100vh;
+  background-color: #290f61;
+  width: 300px;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  overflow: hidden;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ 
+  z-index: 10;
+}
+
+
+
+
+
+.close-icon2 {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-items: center;
+  z-index: 20;
+}
+
+.pruebaEstilo {
+  position: absolute;
+  width: 300px; /* Establecer un ancho menor */
+  height: 100vh; /* Establecer un alto menor */
+  background-color: #0000ff;
+  transform: translateX(300px);
+  z-index: 5; /* Establecer un valor más bajo para z-index */
+  top: 0; /* Ajustar la posición vertical */
+}
+</style>
+
+<script>
+  const lista = document.querySelector('.lista');
+const pruebaEstilo = document.querySelector('.pruebaEstilo');
+
+lista.addEventListener('click', () => {
+  pruebaEstilo.style.transform = 'none';
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <button id="myButton">Mover</button>
+<div class="acordeon">
+  <img src="https://picsum.photos/200/300" alt="">
+</div>
+
+<button id="translateBtn">Mover</button>
+<div class="container">
+  <div class="layer1 fondo"><p class="text">PRUEBA ENEBA</p></div>
+ 
+</div>
+
+<style>
+
+
+
+.acordeon {
+  position: relative;
+}
+
+.acordeon img {
+  max-width: 10%;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
+
+.acordeon.move img {
+  transform: translateX(100%) scale(0.8);
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  transition: transform 0.5s ease;
+  background-color: aquamarine;
+  
+}
+
+.layer1, .layer2, .layer3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layer1 {
+  background-color: rgb(132, 0, 255);
+  transition: 0.2s ease-in-out;
+  transform: translateX(300px);
+  max-width: 50%;
+  letter-spacing: -5px;
+}
+
+.layer1-translated {
+  transform: translateX(0px);
+  max-width: 120%;
+  height: 300px;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 0px;
+}
+
+.layer2 {
+  background-color: green;
+}
+
+.layer3 {
+  background-color: blue;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+
+</style>
+
+<script>
+ const acordeon = document.querySelector('.acordeon');
+const myButton = document.querySelector('#myButton');
+
+myButton.addEventListener('click', () => {
+  acordeon.classList.toggle('move');
+});
+
+
+const translateBtn = document.getElementById('translateBtn');
+const layer1 = document.querySelector('.layer1');
+
+translateBtn.addEventListener('click', () => {
+  layer1.classList.toggle('layer1-translated');
+});
+
+// const translateBtn = document.getElementById('translateBtn');
+// const container = document.querySelector('.layer1');
+
+// let isTranslated = false;
+
+// translateBtn.addEventListener('click', () => {
+//   if (isTranslated) {
+//     container.style.transform = 'translateX(400px)';
+//     isTranslated = false;
+//   } else {
+//     container.style.transform = 'translateX(0px)';
+//     isTranslated = true;
+//   }
+// });
+</script>
+
+
+</body>
+</html>

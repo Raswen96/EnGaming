@@ -423,3 +423,760 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// SearchBar
+
+    // ---- ---- Const ---- ---- //
+    let inputBox = document.querySelector('.input-box'),
+    searchIcon = document.querySelector('.search'),
+    closeIcon = document.querySelector('.close-icon');
+  
+  // ---- ---- Open Input ---- ---- //
+  searchIcon.addEventListener('click', () => {
+    inputBox.classList.add('open');
+  });
+  // ---- ---- Close Input ---- ---- //
+  closeIcon.addEventListener('click', () => {
+    inputBox.classList.remove('open');
+  });
+
+  // MenuDropdown Open 
+
+//   const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen', 'no-scroll');
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen', 'no-scroll' );
+// });
+
+
+
+// Menu fijo
+
+// const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+// const html = document.querySelector('html');
+// const body = document.querySelector('body');
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen');
+//   html.style.overflow = 'hidden';
+//   body.style.overflow = 'hidden';
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+//   html.style.overflow = 'auto';
+//   body.style.overflow = 'auto';
+// });
+
+// const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen');
+  
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+ 
+// });
+
+// const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+// const body = document.querySelector('body'); // Seleccionar el elemento body
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen');
+//   body.classList.add('static'); // Agregar la clase static al body
+//   const dropButton = burgerDropMenu.querySelector('.dropbutton');
+//   dropButton.classList.add('open'); // Agregar la clase open al elemento .dropbutton
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+//   body.classList.remove('static'); // Remover la clase static del body
+//   const dropButton = burgerDropMenu.querySelector('.dropbutton');
+//   dropButton.classList.remove('open'); // Remover la clase open del elemento .dropbutton
+// });
+
+// const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+// const body = document.querySelector('body');
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen');
+//   body.classList.add('static');
+//   body.style.overflowY = 'scroll'; // Establecer overflow-y en scroll para el body
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+//   body.classList.remove('static');
+//   body.style.overflowY = 'auto'; // Restablecer overflow-y en auto para el body
+// });
+
+// const burgerDiv = document.querySelector('.burger');
+// const burgerDropMenu = document.querySelector('.burgerDropMenu');
+// const closeIcon2 = document.querySelector('.close-icon2');
+// const body = document.querySelector('body');
+// const backgroundOverlay = document.querySelector('.backgroundOverlay');
+
+// burgerDiv.addEventListener('click', () => {
+//   burgerDropMenu.classList.add('dropmenuOpen');
+//   body.classList.add('static');
+//   body.style.overflowY = 'scroll'; // Establecer overflow-y en scroll para el body
+//   backgroundOverlay.classList.add('overlayActive'); // Agregar la clase .overlay a .backgroundOverlay
+// });
+
+// closeIcon2.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+//   body.classList.remove('static');
+//   body.style.overflowY = 'auto'; // Restablecer overflow-y en auto para el body
+//   backgroundOverlay.classList.remove('overlayActive'); // Eliminar la clase .overlay de .backgroundOverlay
+// });
+
+// backgroundOverlay.addEventListener('click', () => {
+//   burgerDropMenu.classList.remove('dropmenuOpen');
+//   body.classList.remove('static');
+//   body.style.overflowY = 'auto'; // Restablecer overflow-y en auto para el body
+//   backgroundOverlay.classList.remove('overlayActive'); // Eliminar la clase .
+// })
+
+const burgerDiv = document.querySelector('.burger');
+const burgerDropMenu = document.querySelector('.burgerDropMenu');
+const closeIcon2 = document.querySelector('.close-menu');
+const body = document.querySelector('body');
+const backgroundOverlay = document.querySelector('.backgroundOverlay');
+
+burgerDiv.addEventListener('click', () => {
+  burgerDropMenu.classList.add('dropmenuOpen');
+  body.classList.add('static'); // Agregar la clase .static al body
+  body.style.overflowY = 'scroll'; // Establecer overflow-y en scroll para el body
+  backgroundOverlay.classList.add('overlayActive'); // Agregar la clase .overlay a .backgroundOverlay
+});
+
+closeIcon2.addEventListener('click', () => {
+  burgerDropMenu.classList.remove('dropmenuOpen');
+  body.classList.remove('static'); // Eliminar la clase .static del body
+  body.style.overflowY = 'auto'; // Restablecer overflow-y en auto para el body
+  backgroundOverlay.classList.remove('overlayActive'); // Eliminar la clase .overlay de .backgroundOverlay
+});
+
+backgroundOverlay.addEventListener('click', () => {
+  burgerDropMenu.classList.remove('dropmenuOpen');
+  body.classList.remove('static'); // Eliminar la clase .static del body
+  body.style.overflowY = 'auto'; // Restablecer overflow-y en auto para el body
+  backgroundOverlay.classList.remove('overlayActive'); // Eliminar la clase .overlay de .backgroundOverlay
+});
+
+// const lista = document.querySelector('.lista');
+// const pruebaEstilo = document.querySelector('.pruebaEstilo, .pruebaEstilo2');
+// const backButton = document.querySelector('.back');
+
+// lista.addEventListener('click', () => {
+//   pruebaEstilo.style.transform = 'translateX(0)';
+//   backButton.style.display = 'flex';
+// });
+
+// backButton.addEventListener('click', () => {
+//   backButton.style.display = 'none';
+//   pruebaEstilo.style.transform = 'translateX(300px)';
+// });
+
+// const lista1 = document.querySelector('.lista:nth-child(2)');
+// const lista2 = document.querySelector('.lista:nth-child(3)');
+// const pruebaEstilo = document.querySelector('.pruebaEstilo');
+// const pruebaEstilo2 = document.querySelector('.pruebaEstilo2');
+// const backButton1 = document.querySelector('.back', pruebaEstilo);
+// const backButton2 = pruebaEstilo2.querySelector('.back');
+
+// lista1.addEventListener('click', () => {
+//   pruebaEstilo.style.transform = 'translateX(0)';
+//   backButton1.style.display = 'flex';
+// });
+
+// lista2.addEventListener('click', () => {
+//   pruebaEstilo2.style.transform = 'translateX(0)';
+//   backButton2.style.display = 'flex';
+// });
+
+// backButton1.addEventListener('click', () => {
+//   backButton1.style.display = 'none';
+//   pruebaEstilo.style.transform = 'translateX(300px)';
+// });
+
+// backButton2.addEventListener('click', () => {
+//   backButton2.style.display = 'none';
+//   pruebaEstilo2.style.transform = 'translateX(300px)';
+// });
+
+
+
+
+const elementosLi = document.querySelectorAll('.mainMenu ul li');
+const pruebaEstilo = document.querySelector('.toggleMenu1');
+const pruebaEstilo2 = document.querySelector('.toggleMenu2');
+const pruebaEstilo3 = document.querySelector('.toggleMenu3');
+const pruebaEstilo4 = document.querySelector('.toggleMenu4');
+const pruebaEstilo5 = document.querySelector('.toggleMenu5');
+const pruebaEstilo6 = document.querySelector('.toggleMenu6');
+const backButton1 = document.querySelectorAll('.back-close');
+
+elementosLi.forEach((elemento, index) => {
+  elemento.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosLi.forEach((elementoLi) => {
+        elementoLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 1) {
+      pruebaEstilo.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      pruebaEstilo2.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 3) {
+      pruebaEstilo3.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      pruebaEstilo4.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 5) {
+      pruebaEstilo5.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } 
+    if (index === 6) {
+      pruebaEstilo6.style.transform = 'translateX(0)';
+      backButton1.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } 
+  });
+});
+
+
+
+backButton1.forEach((back) => {
+  back.addEventListener('click', () => {
+    backButton1.forEach((back) => {
+      back.style.display = 'none';
+    });
+    if (pruebaEstilo.style.transform === 'translateX(0px)') {
+      pruebaEstilo.style.transform = 'translateX(300px)';
+    } if (pruebaEstilo2.style.transform === 'translateX(0px)') {
+      pruebaEstilo2.style.transform = 'translateX(300px)';
+    } if (pruebaEstilo3.style.transform === 'translateX(0px)') {
+      pruebaEstilo3.style.transform = 'translateX(300px)';
+    } if (pruebaEstilo4.style.transform === 'translateX(0px)') {
+      pruebaEstilo4.style.transform = 'translateX(300px)';
+    } if (pruebaEstilo5.style.transform === 'translateX(0px)') {
+      pruebaEstilo5.style.transform = 'translateX(300px)';
+    } else if (pruebaEstilo6.style.transform === 'translateX(0px)') {
+      pruebaEstilo6.style.transform = 'translateX(300px)';
+    } 
+  });
+});
+
+
+
+
+const elementosSubLi = document.querySelectorAll('.subMenu ul li');
+const subMenu1 = document.querySelector('.toggleSubMenu1');
+const subMenu2 = document.querySelector('.toggleSubMenu2');
+const subMenu3 = document.querySelector('.toggleSubMenu3');
+const subMenu4 = document.querySelector('.toggleSubMenu4');
+const subMenu5 = document.querySelector('.toggleSubMenu5');
+const subMenu6 = document.querySelector('.toggleSubMenu6');
+const backButton2 = document.querySelectorAll('.back-close2');
+
+elementosSubLi.forEach((elemento2, index) => {
+  elemento2.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi.forEach((elementoSubLi) => {
+        elementoSubLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento2.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      subMenu5.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 5) {
+      subMenu6.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+  });
+});
+
+
+
+backButton2.forEach((back2) => {
+  back2.addEventListener('click', () => {
+    backButton2.forEach((back2) => {
+      back2.style.display = 'none';
+    });
+    if (subMenu1.style.transform === 'translateX(0px)') {
+      subMenu1.style.transform = 'translateX(300px)';
+    } if (subMenu2.style.transform === 'translateX(0px)') {
+      subMenu2.style.transform = 'translateX(300px)';
+    } if (subMenu3.style.transform === 'translateX(0px)') {
+      subMenu3.style.transform = 'translateX(300px)';
+    } if (subMenu4.style.transform === 'translateX(0px)') {
+      subMenu4.style.transform = 'translateX(300px)';
+    } if (subMenu5.style.transform === 'translateX(0px)') {
+      subMenu5.style.transform = 'translateX(300px)';
+    } if (subMenu6.style.transform === 'translateX(0px)') {
+      subMenu6.style.transform = 'translateX(300px)';
+    } if (subMenu2_1.style.transform === 'translateX(0px)') {
+      subMenu2_1.style.transform = 'translateX(300px)';
+    } if (subMenu2_2.style.transform === 'translateX(0px)') {
+      subMenu2_2.style.transform = 'translateX(300px)';
+    } if (subMenu2_3.style.transform === 'translateX(0px)') {
+      subMenu2_3.style.transform = 'translateX(300px)';
+    } if (subMenu2_4.style.transform === 'translateX(0px)') {
+      subMenu2_4.style.transform = 'translateX(300px)';
+    } if (subMenu3_1.style.transform === 'translateX(0px)') {
+      subMenu3_1.style.transform = 'translateX(300px)';
+    } if (subMenu3_2.style.transform === 'translateX(0px)') {
+      subMenu3_2.style.transform = 'translateX(300px)';
+    } if (subMenu3_3.style.transform === 'translateX(0px)') {
+      subMenu3_3.style.transform = 'translateX(300px)';
+    } if (subMenu4_1.style.transform === 'translateX(0px)') {
+      subMenu4_1.style.transform = 'translateX(300px)';
+    } if (subMenu4_2.style.transform === 'translateX(0px)') {
+      subMenu4_2.style.transform = 'translateX(300px)';
+    } if (subMenu4_3.style.transform === 'translateX(0px)') {
+      subMenu4_3.style.transform = 'translateX(300px)';
+    } if (subMenu4_4.style.transform === 'translateX(0px)') {
+      subMenu4_4.style.transform = 'translateX(300px)';
+    } if (subMenu4_5.style.transform === 'translateX(0px)') {
+      subMenu4_5.style.transform = 'translateX(300px)';
+    } if (subMenu5_1.style.transform === 'translateX(0px)') {
+      subMenu5_1.style.transform = 'translateX(300px)';
+    } if (subMenu5_2.style.transform === 'translateX(0px)') {
+      subMenu5_2.style.transform = 'translateX(300px)';
+    } if (subMenu5_3.style.transform === 'translateX(0px)') {
+      subMenu5_3.style.transform = 'translateX(300px)';
+    } if (subMenu5_4.style.transform === 'translateX(0px)') {
+      subMenu5_4.style.transform = 'translateX(300px)';
+    } if (subMenu5_5.style.transform === 'translateX(0px)') {
+      subMenu5_5.style.transform = 'translateX(300px)';
+    } if (subMenu6_1.style.transform === 'translateX(0px)') {
+      subMenu6_1.style.transform = 'translateX(300px)';
+    } if (subMenu6_2.style.transform === 'translateX(0px)') {
+      subMenu6_2.style.transform = 'translateX(300px)';
+    } if (subMenu6_3.style.transform === 'translateX(0px)') {
+      subMenu6_3.style.transform = 'translateX(300px)';
+    } if (subMenu6_4.style.transform === 'translateX(0px)') {
+      subMenu6_4.style.transform = 'translateX(300px)';
+    }
+  });
+});
+
+
+const elementosSubLi2 = document.querySelectorAll('.subMenu2 ul li');
+const subMenu2_1 = document.querySelector('.toggleSubMenu2-1');
+const subMenu2_2 = document.querySelector('.toggleSubMenu2-2');
+const subMenu2_3 = document.querySelector('.toggleSubMenu2-3');
+const subMenu2_4 = document.querySelector('.toggleSubMenu2-4');
+
+
+elementosSubLi2.forEach((elemento3, index) => {
+  elemento3.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi2.forEach((elementoSubLi2) => {
+        elementoSubLi2.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento3.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu2_1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu2_2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu2_3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu2_4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } 
+  });
+});
+
+const elementosSubLi3 = document.querySelectorAll('.subMenu3 ul li');
+const subMenu3_1 = document.querySelector('.toggleSubMenu3-1');
+const subMenu3_2 = document.querySelector('.toggleSubMenu3-2');
+const subMenu3_3 = document.querySelector('.toggleSubMenu3-3');
+
+
+elementosSubLi3.forEach((elemento, index) => {
+  elemento.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi3.forEach((elementoSubLi) => {
+        elementoSubLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu3_1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu3_2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu3_3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu2_4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      subMenu5.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 5) {
+      subMenu6.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+  });
+});
+
+const elementosSubLi4 = document.querySelectorAll('.subMenu4 ul li');
+const subMenu4_1 = document.querySelector('.toggleSubMenu4-1');
+const subMenu4_2 = document.querySelector('.toggleSubMenu4-2');
+const subMenu4_3 = document.querySelector('.toggleSubMenu4-3');
+const subMenu4_4 = document.querySelector('.toggleSubMenu4-4');
+const subMenu4_5 = document.querySelector('.toggleSubMenu4-5');
+
+
+elementosSubLi4.forEach((elemento, index) => {
+  elemento.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi4.forEach((elementoSubLi) => {
+        elementoSubLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu4_1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu4_2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu4_3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu4_4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      subMenu4_5.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+  });
+});
+
+const elementosSubLi5 = document.querySelectorAll('.subMenu5 ul li');
+const subMenu5_1 = document.querySelector('.toggleSubMenu5-1');
+const subMenu5_2 = document.querySelector('.toggleSubMenu5-2');
+const subMenu5_3 = document.querySelector('.toggleSubMenu5-3');
+const subMenu5_4 = document.querySelector('.toggleSubMenu5-4');
+const subMenu5_5 = document.querySelector('.toggleSubMenu5-5');
+
+
+elementosSubLi5.forEach((elemento, index) => {
+  elemento.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi4.forEach((elementoSubLi) => {
+        elementoSubLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu5_1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu5_2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu5_3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu5_4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      subMenu5_5.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+  });
+});
+
+const elementosSubLi6 = document.querySelectorAll('.subMenu6 ul li');
+const subMenu6_1 = document.querySelector('.toggleSubMenu6-1');
+const subMenu6_2 = document.querySelector('.toggleSubMenu6-2');
+const subMenu6_3 = document.querySelector('.toggleSubMenu6-3');
+const subMenu6_4 = document.querySelector('.toggleSubMenu6-4');
+const subMenu6_5 = document.querySelector('.toggleSubMenu6-5');
+
+
+elementosSubLi6.forEach((elemento, index) => {
+  elemento.addEventListener('click', () => {
+    // Verifica si el elemento clicado es el primer elemento de la lista
+    if (index > 0) {
+      // Elimina la clase active de cualquier elemento que la tenga actualmente
+      elementosSubLi6.forEach((elementoSubLi) => {
+        elementoSubLi.classList.remove('active');
+      });
+      // Añade la clase active al elemento clicado
+      elemento.classList.add('active');
+    }
+
+    // Añade el código para manejar el evento de clic en cada elemento 'li'
+    if (index === 0) {
+      subMenu6_1.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 1) {
+      subMenu6_2.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 2) {
+      subMenu6_3.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+    if (index === 3) {
+      subMenu6_4.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    } if (index === 4) {
+      subMenu6_5.style.transform = 'translateX(0)';
+      backButton2.forEach((back) => {
+        back.style.display = 'flex';
+      });
+    }
+  });
+});
+// const elementosLi = document.querySelectorAll('.mainMenu ul li');
+// const pruebaEstilo = document.querySelector('.pruebaEstilo');
+// const pruebaEstilo2 = document.querySelector('.pruebaEstilo2');
+// const backButton1 = document.querySelector('.back');
+
+// elementosLi.forEach((elemento, index) => {
+//   elemento.addEventListener('click', () => {
+//     // Verifica si el elemento clicado es el primer elemento de la lista
+//     if (index > 0) {
+//       // Elimina la clase active de cualquier elemento que la tenga actualmente
+//       elementosLi.forEach((elementoLi) => {
+//         elementoLi.classList.remove('active');
+//       });
+//       // Añade la clase active al elemento clicado
+//       elemento.classList.add('active');
+//     }
+
+//     // Añade el código para manejar el evento de clic en cada elemento 'li'
+//     if (index === 1) {
+//       pruebaEstilo.style.transform = 'translateX(0)';
+//       backButton1.style.display = 'flex';
+//     } else {
+//       pruebaEstilo.style.transform = 'translateX(300px)';
+//       backButton1.style.display = 'none';
+//     }
+//   });
+// });
+
+// backButton1.addEventListener('click', () => {
+//   backButton1.style.display = 'none';
+//   pruebaEstilo.style.transform = 'translateX(300px)';
+// });
+
+
+// const elementosLi = document.querySelectorAll('.mainMenu ul li');
+// const pruebaEstilo = document.querySelector('.pruebaEstilo');
+// const backButton1 = document.querySelector('.back');
+
+// elementosLi.forEach((elemento) => {
+//   elemento.addEventListener('click', () => {
+//     // Elimina la clase active de cualquier elemento que la tenga actualmente
+//     elementosLi.forEach((elementoLi) => {
+//       elementoLi.classList.remove('active');
+//     });
+//     // Añade la clase active al elemento clicado
+//     elemento.classList.add('active');
+
+//     // Añade el código para manejar el evento de clic en cada elemento 'li'
+//     pruebaEstilo.style.transform = 'translateX(0)';
+//     backButton1.style.display = 'flex';
+//   });
+// });
+
+// backButton1.addEventListener('click', () => {
+//     backButton1.style.display = 'none';
+//     pruebaEstilo.style.transform = 'translateX(300px)';
+//   });
+
+// const elementosLi = document.querySelectorAll('.mainMenu ul li');
+// const pruebaEstilo = document.querySelector('.pruebaEstilo');
+// const pruebaEstilo2 = document.querySelector('.pruebaEstilo2');
+// const backButton1 = document.querySelector('.back', pruebaEstilo);
+// const backButton2 = pruebaEstilo2.querySelector('.back');
+
+// elementosLi.forEach((elemento) => {
+//   elemento.addEventListener('click', () => {
+//     // Elimina la clase active de cualquier elemento que la tenga actualmente
+//     elementosLi.forEach((elementoLi) => {
+//       elementoLi.classList.remove('active');
+//     });
+//     // Añade la clase active al elemento clicado
+//     elemento.classList.add('active');
+//   });
+// });
+
+// elementosLi.addEventListener('click', () => {
+//   pruebaEstilo.style.transform = 'translateX(0)';
+//   backButton1.style.display = 'flex';
+// });
+
+// lista2.addEventListener('click', () => {
+//   pruebaEstilo2.style.transform = 'translateX(0)';
+//   backButton2.style.display = 'flex';
+// });
+
+// backButton1.addEventListener('click', () => {
+//   backButton1.style.display = 'none';
+//   pruebaEstilo.style.transform = 'translateX(300px)';
+// });
+
+// backButton2.addEventListener('click', () => {
+//   backButton2.style.display = 'none';
+//   pruebaEstilo2.style.transform = 'translateX(300px)';
+// });

@@ -33,40 +33,6 @@ body {
   
 /*Fin Globales*/
 
-
-/* .messageOne, .messageTwo {
-  display: none;
-  position: fixed;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 50px;
-  background-color: #5512d1;
-  z-index: 60;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  opacity: 1;
-  transition: opacity 0.3s ease-out;
-  font-family: sans-serif;
-  border: 1px solid rgb(149, 95, 248);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.295);
- 
-}
-
-.messageOne.message-visible {
-  display: flex;
-  opacity: 1;
-}
-
-.messageTwo.message-visible {
-  display: flex;
-  opacity: 1;
-} */
-
 .favorite-message, .cart-message {
   display: none;
   position: fixed;
@@ -114,13 +80,30 @@ body {
 /* Inicio de header y barra de navegación */  
 
   header{
-    background: transparent;
-    height: 90px;
+    background-color: #290f61;
     padding: 0 20px;
+    position: relative;
+  }
+
+  .logoA {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .burger span {
+    display: none;
+  }
+
+  .iconos i {
+    font-size: 19px;
   }
 
   .container img{
-   height: 70px;
+   height: 65px;
   }
 
   .container {
@@ -130,9 +113,6 @@ body {
     justify-content: space-between;
   }
 
-.container div {
-  padding: 0 10px 0 0;
-}
 
   div button {
     display: flex;
@@ -144,6 +124,7 @@ body {
     font-family: sans-serif;
     align-items: center;
     font-weight: bold;
+    padding: 15px;
   }
 
   div #idiomasBtn p {
@@ -164,6 +145,10 @@ width: 1px;
   border-color: rgb(247, 211, 8);
 }
 
+#idiomasBtnMobile {
+  display: none;
+}
+
 
   .buscador {
     display: flex;
@@ -172,9 +157,10 @@ width: 1px;
     height: 90px;
     width: 500px;
     position: relative;
+    padding: 0 10px 0 0;
   }
 
-  header input {
+  header .buscador input {
     width: 100%;
     height: 50px;
     outline: none;
@@ -192,7 +178,7 @@ width: 1px;
     color: #9370c0;
   }
 
-  header input:focus {
+  header .buscador input:focus {
     outline: none;
     box-shadow: 0 0 1px 0 #0000ff,  0 0 1px 0 #4c00ff,  0 0 2px 2px #5b02ff, 0 0 2px 0 #fff; 
     transition: 0.3s;
@@ -202,7 +188,7 @@ width: 1px;
   .searchInputIcon {
     position: absolute;
     top: 23px;
-    right: 12.5px;
+    right: 11.5px;
     padding: 13px;
     color: white;
     border: #5e5a5a49 1px solid;
@@ -215,6 +201,86 @@ width: 1px;
   .buscador input:focus + .searchInputIcon {
     color: #9f72ff;
     transition: 0.3s;
+  }
+
+
+
+  .input-box {
+    position: relative;
+    width: 100%;
+    max-width: 60px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 6px;
+    
+  }
+  .input-box.open {
+    max-width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  ::placeholder {
+    font-size: 21px;
+    color: #9370c0;
+  }
+
+.input-box {
+  display: none;
+}
+
+  .input-box input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    background-color: #290f61;
+   
+  }
+  .input-box.open input {
+    padding: 0 15px 0 65px;
+  }
+  
+  .input-box .search {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #290f61;
+    cursor: pointer;
+  }
+ 
+  
+  .search .fa-search {
+    font-size: 21px;
+    color: #ffffff;
+  }
+  .input-box .close-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 30px;
+    color: #1c1c1c;
+    padding: 17px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .input-box.open .close-icon {
+    transform: translateY(-50%) rotate(180deg);
+    pointer-events: auto;
+    opacity: 1;
+    color: white;
   }
  
 
@@ -241,7 +307,35 @@ font-size: 20px;
 
 #panelBtn4 {
   padding: 0;
+  width: 98px;
 }
+
+.burgerDropMenu {
+  display: none;
+}
+
+.close-icon2 {
+  left: 0;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-items: center;
+  z-index: 20;
+}
+
+
+
+.close-menu:hover .close-icon2 {
+  color: #9c85bb;
+  transition: 0.2s ;
+}
+
+.backgroundOverlay:hover + .burgerDropMenu .close-icon2 {
+  color: #9c85bb;
+}
+
+
 
 
 nav {
@@ -264,6 +358,7 @@ nav ul {
     display: inline-block; /* Cambia el comportamiento de visualización a en línea */
     position: relative;
     padding: 16px 20px;
+    font-weight: 500;
   }
 
  nav li:hover {
@@ -318,6 +413,32 @@ nav ul ul.submenu li a {
   padding: 10px 20px;
   color: #ffffff;
   text-decoration: none;
+}
+
+
+i.fas.fa-chevron-down {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 5px;
+}
+
+
+/* Estilo para el icono chevron */
+nav ul li > a > .fas {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li:hover > a > .fas {
+  color: rgb(247, 211, 8);
+  transform: scaleY(-1);
+  transform-origin: center;
+}
+
+nav ul li:hover > a > .fas.fa-chevron-up {
+  font-size: 14px;
+  margin-left: 5px;
+  transform: scaleY(1);
+  transform-origin: center;
 }
 
 /* Fin de hader y barra de navegación*/
@@ -1113,27 +1234,350 @@ font-weight: bold;
 
 
 
-i.fas.fa-chevron-down {
-  font-size: 14px;
-  color: #ccc;
-  margin-left: 5px;
+/* Responsive */
+
+@media screen and (max-width: 1227px) {
+  nav li {
+    padding: 16px 8px;
+  }
 }
 
 
-/* Estilo para el icono chevron */
-nav ul li > a > .fas {
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+@media screen and (max-width: 957px) {
+
+  .iconos {
+    padding: 0;
+  }
+ 
+  header {
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgb(100, 49, 219);
+  }
+
+  .container {
+    height: 60px;
+  }
+
+ 
+  .burger {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
 }
 
-nav ul li:hover > a > .fas {
-  color: rgb(247, 211, 8);
-  transform: scaleY(-1);
-  transform-origin: center;
+.burger span{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 7px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    transition: all .3s ease-in-out;
 }
 
-nav ul li:hover > a > .fas.fa-chevron-up {
-  font-size: 14px;
-  margin-left: 5px;
-  transform: scaleY(1);
-  transform-origin: center;
+.logo img {
+  height: 45px;
 }
+
+#idiomasBtn, .buscador  {
+  display: none;
+}
+
+#idiomasBtnMobile {
+  display: block;
+}
+
+.input-box {
+  display: block;
+}
+
+
+.iconos i {
+  font-size: 23px;
+}
+
+.iconos p {
+  display: none;
+}
+
+.iconos #panelBtn4, .iconos .separador {
+  display: none;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+outline: none;
+  background-color: #290f61;
+  border-radius: 6px;
+}
+.input-box.open {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  outline: none;
+  border: none;
+}
+
+
+::placeholder {
+  font-size: 21px;
+  color: #9c85bb;
+}
+
+.input-box {
+  left: 9px;
+  box-shadow: none;
+  
+}
+
+.input-box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0 15px;
+  background-color: #290f61;
+  
+  
+}
+.input-box.open input {
+  padding: 0 15px 0 65px;
+  transition: all 0.9s ease-in-out;
+}
+
+.input-box .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #290f61;
+  
+  cursor: pointer;
+}
+
+.search .fa-search {
+  font-size: 21px;
+  color: #ffffff;
+}
+.input-box .close-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 30px;
+  color: #1c1c1c;
+  padding: 17px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+.input-box.open .close-icon {
+  transform: translateY(-50%) rotate(180deg);
+  pointer-events: auto;
+  opacity: 1;
+  color: white;
+}
+
+nav {
+  display: none;
+}
+
+.burgerDropMenu {
+  position: absolute;
+  height: 100vh;
+  background-color: #290f61;
+  width: 300px;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 30;
+  overflow: hidden;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.pruebaEstilo {
+  position: absolute;
+  width: 300px; /* Establecer un ancho menor */
+  height: 100vh; /* Establecer un alto menor */
+  background-color: #290f61;
+  transform: translateX(300px);
+  z-index: 5; /* Establecer un valor más bajo para z-index */
+  top: 0; /* Ajustar la posición vertical */
+  transition: transform 0.2s ease-in-out; /* Establecer una transición */
+}
+
+
+
+
+.back {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.back:hover i {
+  color: #ffca1a;
+}
+
+.back .fa-chevron-down {
+  margin: 0 15px 0 0;
+  rotate: 90deg;
+}
+
+.back:hover {
+  background-color: #511fbb;
+}
+
+
+
+.close-menu {
+ height: 60px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  background-color: #290f61;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 17px;
+  border-bottom: #511fbb solid 1px;
+  cursor: pointer;
+}
+
+
+
+.overlayActive {
+  background-color: #00000060;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  cursor: pointer;
+}
+
+.dropMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 5px 15px;
+  border-bottom: 1px #511fbb solid;
+  z-index: 10;
+  height: 60px;
+}
+
+.dropMenuHeader2, .dropMenuHeader3, .dropMenuHeader4, .dropMenuHeader5, .dropMenuHeader6, .dropMenuHeader7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px #511fbb solid;
+  z-index: 10;
+  height: 60px;
+}
+
+
+
+.burgerDropMenuList li:hover i {
+  color: #ffca1a;
+}
+
+.dropMenuLogo img {
+  height: 45px;
+}
+
+
+
+.burgerDropMenu.dropmenuOpen {
+  display: block;
+}
+
+.burgerDropMenuList ul li i {
+  rotate: -90deg;
+}
+
+.burgerDropMenuList ul li{
+padding: 0 17px;
+width: 100%;
+color: white;
+height: 35px;
+line-height: 35px;
+border-bottom: 1px #511fbb solid;
+font-family: sans-serif;
+font-weight: bolder;
+font-size: 13px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.burgerDropMenuList ul li:hover {
+  background-color: #511fbb;
+  color: #bf88fd;
+}
+
+.dropMenuApp {
+  width: 300px;
+  height: 300px;
+  padding: 17px ;
+}
+
+.dropMenuApp div {
+  margin: 0 0 15px 0;
+}
+
+.dropMenuApp p {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.dropMenuApp img {
+  width: 140px;
+}
+
+
+.static {
+position: fixed;
+width: 100%;
+}
+ 
+}
+
+@media screen and (max-width: 357px) { 
+
+#panelBtn {
+  display: none ;
+}
+
+
+
+ }
