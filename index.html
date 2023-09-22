@@ -19,6 +19,66 @@
       <div class="cart-message">
         <i class="fa-solid fa-circle-check" style="margin-right: 10px; color: #00cf9f;;" ></i>    <p>Agregado al carrito</p>
       </div>
+      <div class="menu-de-compras" id="cartMenu">
+        <div class="carrito-title">
+            <h3>Carrito de compras</h3>
+        </div>
+      </div>
+      <div class="menu-de-favoritos" id="favMenu">
+        <div class="carrito-title">
+            <h3>Tus favoritos</h3>
+        </div>
+      </div>
+      <div id="popup" class="popup">
+        <div>
+            <img src="/img/offerFlash/Flash-png-removebg-previewrecortada.png" alt="">
+        </div>
+        
+        <div class="popup-content">
+            <span class="close-popup"><i class="fas fa-times"></i></span>
+          <h2>¡Oferta Flash!</h2>
+          <br>
+          <p>Aprovecha nuestra oferta por tiempo limitado.</p>
+          <div class="container-reloj">
+            <div style="display: block;">
+            <div class="box-reloj">
+              <span id="days">00</span>              
+            </div>
+            <div class="time-tile">
+                <span class="label-reloj">DÍAS</span>
+            </div>
+        </div>
+        <div style="display: block;">
+            <div class="box-reloj">
+              <span id="hours">00</span>
+            </div>
+            <div class="time-tile">
+                <span class="label-reloj">HRS</span>
+            </div>
+        </div>
+        <div style="display: block;">
+            <div class="box-reloj">
+              <span id="minutes">00</span>
+              
+            </div>
+            <div class="time-tile"> 
+                <span class="label-reloj">MIN</span>
+            </div>
+        </div>
+        <div style="display: block;">
+            <div class="box-reloj">
+              <span id="seconds">00</span>
+              
+            </div>
+            <div class="time-tile">
+                <span class="label-reloj">SEG</span>
+            </div>
+        </div>
+            </div>
+            <div class="offer-button">VER OFERTAS</div>
+        </div>
+        </div>
+      </div>
 
     <header>
         <div class="container">
@@ -921,7 +981,7 @@
 <!-- Slideshow container -->
 
 <div class="containerTwo">
-  <div class="slide slide-1 active" onclick="handleClick(), handleClickStart()">
+  <div class="slide slide-1 active">
   <h3></h3>
 </div>
   <div class="slide slide-2">
@@ -935,15 +995,37 @@
   </div>
 </div>
 
+<div class="containerTwo-one">
+    <div class="slide2 slide-1-2 ">
+        <img src="/img/middle-slider-banner/mini-middle-banner-slider1.jpg" alt="">
+    <h3></h3>
+  </div>
+    <div class="slide2 slide-2-2">
+        <img src="/img/middle-slider-banner/mini-middle-banner-slider2.jpg" alt="">
+      <h3></h3>
+    </div>
+    <div class="slide2 slide-3-2">
+        <img src="/img/middle-slider-banner/mini-middle-banner-slider3.jpg" alt="">
+      <h3></h3>
+    </div>
+    <div class="slide2 slide-4-2">
+        <img src="/img/middle-slider-banner/mini-middle-banner-slider7.jpg" alt="">
+      <h3></h3>
+    </div>
+  </div>
+
+
+
 
   
   <!-- The dots/circles -->
   
-    <section>
+    <section class="nueva">
 <h1>Lo más nuevo</h1>
 <div class="containerThree">
+    <div class="frame">
  <div class="item game1">
-    <div>
+    <div class="icon-selectors">
         <div class="icon-selector one" title="Agregar a deseados">
             <i class="fa-solid fa-heart"></i>
         </div>
@@ -953,169 +1035,11 @@
     </div>
     
     
-    <div class="gameInfo"><p class="gameTitle">Mortal Kombat 11 | Edición Steam | GLOBAL</p>
-    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    </div>
- </div>
- <div class="item game2">
-    <div>
-        <div class="icon-selector one" title="Agregar a deseados">
-            <i class="fa-solid fa-heart"></i>
+
+    <div class="gameInfo">
+        <div class="gameTitle"><span>Mortal Kombat 11 | Edición Steam | GLOBAL</span>
+            
         </div>
-        <div class="icon-selector two" title="Agregar al carrito de compras">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">The Last Of Us | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">22,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        </div>
- </div>
- <div class="item game3">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Dead Island 2 | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
- </div>
- <div class="item game4">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Stars Wars: Jedi Survivour | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        </div>
- </div>
- <div class="item game5">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Dead By Daylight | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
- </div>
- <div class="item game6">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Dragon Ball Z: Kakarot | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
- </div>
- <div class="item game7">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Spiderman: Miles Morales | Edición Steam | GLOBAL</p>
-        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        </div>
- </div>
- <div class="item game8">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">NBA 2k23 | Edición Steam | GLOBAL</p>
-        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        </div>
- </div>
- <div class="item game9">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Dying Light 2 | Edición Steam | GLOBAL</p>
-        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        </div>
- </div>
- <div class="item game10">
-    <div>
-        <div class="icon-selector one">
-            <i class="fa-solid fa-heart"></i>
-        </div>
-        <div class="icon-selector two">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="gameInfo"><p class="gameTitle">Age Of Empires 4 | Edición Steam | GLOBAL</p>
         <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -1125,7 +1049,229 @@
         </div>
  </div>
 </div>
+<div class="frame">
+ <div class="item game2">
+    <div class="icon-selectors">
+        <div class="icon-selector one" title="Agregar a deseados">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two" title="Agregar al carrito de compras">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>The Last Of Us | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game3">
+    <div class="icon-selectors">
+        <div class="icon-selector one" title="Agregar a deseados">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two" title="Agregar al carrito de compras">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Dead Island 2 | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game4">
+    <div class="icon-selectors">
+        <div class="icon-selector one" title="Agregar a deseados">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two" title="Agregar al carrito de compras">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Stars Wars: Jedi Survivour | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game5">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Dead By Daylight | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game6">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Dragon Ball Z: Kakarot | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game7">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Spiderman: Miles Morales | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game8">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>NBA 2k23 | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game9">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Dying Light 2 | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+<div class="frame">
+ <div class="item game10">
+    <div class="icon-selectors">
+        <div class="icon-selector one">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon-selector two">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    
+        <div class="gameInfo">
+            <div class="gameTitle"><span>Age Of Empires 4 | Edición Steam | GLOBAL</span>
+                
+            </div>
+            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+ </div>
+</div>
+</div>
     </section>
+
+
+    <div class="ofertav1">
+        <div>
+            <img src="/img/banner/Oferta-Eneba-Mayo Fondo3.jpg" alt="">
+        </div>
+    </div>
 
 
     
@@ -1133,8 +1279,9 @@
             <section class="tarjetasRegalo" style="background-color: #370d92;">
                 <h1>Tarjetas de regalo</h1>
                 <div class="containerThree">
+                    <div class="frame2">
                  <div class="item card1">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1144,170 +1291,9 @@
                     </div>
                     
                     
-                    <div class="gameInfo"><p class="gameTitle">Eneba Gift Card 100 USD GLOBAL</p>
-                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    </div>
-                 </div>
-                 <div class="item card2">
-                    <div>
-                        <div class="icon-selector one" title="Agregar a deseados">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two" title="Agregar al carrito de compras">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Amazon Gift Card 100 USD Key GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">22,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
-                 </div>
-                 <div class="item card3">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Battle.net Gift Card 100 EUR Battle.net Key EUROPE</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        </div>
-                 </div>
-                 <div class="item card4">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Fortnite - 13500 V-Bucks Gift Card Key EUROPE</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
-                 </div>
-                 <div class="item card5">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Google Play Gift Card 15 EUR Código EUROPE</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        </div>
-                 </div>
-                 <div class="item card6">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Tarjeta Nintendo Eshop 45 euros EUROPA</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        </div>
-                 </div>
-                 <div class="item card7">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">PlayStation Network Card 50 EUR (DE) PSN Key GERMANY</p>
-                        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
-                 </div>
-                 <div class="item card8">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Spotify Premium 12 Month Key GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
-                 </div>
-                 <div class="item card9">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <div class="gameInfo"><p class="gameTitle">Steam Wallet Gift Card 20 EUR Steam Key GLOBAL</p>
-                        <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
-                 </div>
-                 <div class="item card10">
-                    <div>
-                        <div class="icon-selector one">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="icon-selector two">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
+                    
                     <div class="gameInfo">
-                        <div class="gameTitle"><span>Tarjeta Regalo Xbox Live 75 EUR Código Xbox Live EUROPA</span>
+                        <div class="gameTitle"><span>Eneba Gift Card 100 USD | GLOBAL | EUROPE</span>
                             
                         </div>
                         <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
@@ -1318,19 +1304,243 @@
                         <span class="fa fa-star checked"></span>
                         </div>
                  </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card2">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one" title="Agregar a deseados">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two" title="Agregar al carrito de compras">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Amazon Gift Card 100 USD Key GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                        
                  </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card3">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Battle.net Gift Card 100 EUR Battle.net Key EUROPE</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card4">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Fortnite - 13500 V-Bucks Gift Card Key EUROPE</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card5">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Google Play Gift Card 15 EUR Código EUROPE</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card6">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                   
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Tarjeta Nintendo Eshop 45 euros EUROPA</span>
+                                
+                            </div>
+                            <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card7">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>PlayStation Network Card 50 EUR (DE) PSN Key GERMANY</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card8">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Spotify Premium 12 Month Key GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card9">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                   
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Steam Wallet Gift Card 20 EUR Steam Key GLOBAL</span>
+                                
+                            </div>
+                            <p class="noAvailability">AGOTADO</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                </div>
+                <div class="frame2">
+                 <div class="item card10">
+                    <div class="icon-selectors">
+                        <div class="icon-selector one">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="icon-selector two">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Tarjeta Regalo Xbox Live 75 EUR Código Xbox Live EUROPA</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
+                 </div>
+                 </div>
+                </div>
                 </div>
                     </section>
                 
-                
+         
+                    <div class="ofertav1">
+                        <div>
+                            <img src="/img/middle-slider-banner/middle-banner-slider6.jpg" alt="">
+                        </div>
+                    </div>
    
     
 
     <section>
         <h1>Lo más vendido</h1>
         <div class="containerThree">
+            <div class="frame">
          <div class="item game11">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1338,17 +1548,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Batman Arkham Origins | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+           
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Batman Arkham Origins | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game12">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1368,8 +1584,10 @@
                 <span class="fa fa-star checked"></span>
                 </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game13">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1377,17 +1595,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">CyberPunk 2077 | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>CyberPunk 2077 | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game14">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1395,17 +1619,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Devil May Cry 5 | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Devil May Cry 5 | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game15">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1413,17 +1643,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Grand Theft Auto 5 | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Grand Theft Auto 5 | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game16">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1431,17 +1667,24 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Far Cry 5 | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Far Cry 5 | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game17">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1449,17 +1692,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Hogwarts Legacy | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Hogwarts Legacy | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game18">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1467,15 +1716,21 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Left 4 Dead 2 | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Left 4 Dead 2 | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game19">
             <div>
                 <div class="icon-selector one" title="Agregar a deseados">
@@ -1485,17 +1740,23 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Terraria | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Terraria | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
+        <div class="frame">
          <div class="item game20">
-            <div>
+            <div class="icon-selectors">
                 <div class="icon-selector one" title="Agregar a deseados">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1503,21 +1764,30 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            <div class="gameInfo"><p class="gameTitle">Need For Speed: Heat | Edición Steam | GLOBAL</p>
-                <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                </div>
+            
+                <div class="gameInfo">
+                    <div class="gameTitle"><span>Need For Speed: Heat | Edición Steam | GLOBAL</span>
+                        
+                    </div>
+                    <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
          </div>
+        </div>
         </div>
             </section>
 
-
-
-            <div class="banner">
+        
+            <div class="ofertav1">
+                <div>
+                    <img src="/img/middle-slider-banner/middle-banner-slider8.jpg" alt="">
+                </div>
+            </div>
+            <!-- <div class="banner">
                 <img src="/img/banner/oferta-especial.png" alt="" class="offer">
             <div class="ofertas">
                 <div class="oferta">
@@ -1552,13 +1822,14 @@
                         </div>
                 </div>
             </div>
-            </div>
+            </div> -->
 
             <section>
                 <h1>Próximos Lanzamientos</h1>
                 <div class="containerThree">
+                    <div class="frame">
                  <div class="item game21">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1566,17 +1837,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Castlevania Lords Of Shadow | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Castlevania Lords Of Shadow | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game22">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1584,17 +1861,25 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Tomb Raider | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+
+                   
+
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Tomb Raider | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game23">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1602,15 +1887,21 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Uncharted | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Uncharted | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game24">
                     <div>
                         <div class="icon-selector one" title="Agregar a deseados">
@@ -1620,17 +1911,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Tekken 7 | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Tekken 7 | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game25">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1638,17 +1935,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Street Fighter 6 | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Street Fighter 6 | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game26">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1656,17 +1959,24 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Dark Souls 3 | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Dark Souls 3 | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game27">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1674,17 +1984,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Sekiro: Shadows Die Twice | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Sekiro: Shadows Die Twice | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game28">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1692,17 +2008,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Call Of Duty 2 | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Call Of Duty 2 | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game29">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1710,17 +2032,23 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Minecraft | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Minecraft | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
+                <div class="frame">
                  <div class="item game30">
-                    <div>
+                    <div class="icon-selectors">
                         <div class="icon-selector one" title="Agregar a deseados">
                             <i class="fa-solid fa-heart"></i>
                         </div>
@@ -1728,15 +2056,20 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
                     </div>
-                    <div class="gameInfo"><p class="gameTitle">Diablo 3 | Edición Steam | GLOBAL</p>
-                        <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        </div>
+                    
+                        <div class="gameInfo">
+                            <div class="gameTitle"><span>Diablo 3 | Edición Steam | GLOBAL</span>
+                                
+                            </div>
+                            <p class="availability">DISPONIBLE</p><p class="price">Precio</p><p class="numbPrice">38,5$</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            </div>
                  </div>
+                </div>
                 </div>
                     </section> 
 
@@ -1763,12 +2096,12 @@
                             <li><a href="">Lista de juegos</a></li>
                             <li><a href="">Colecciones</a></li></ul></div>
                     <div class="footer-element"><h3>Ayuda</h3>
-                        <ul><li><a href="">FAQ</a></li>
+                        <ul class="list-element"><li><a href="">FAQ</a></li>
                             <li><a href="">Como activar un juego</a></li>
                             <li><a href="">Crear un ticket</a></li>
                             <li><a href="">Política de devoluciones</a></li></ul></div>
                             <div class="footer-element"><h3>Noticias</h3>
-                                <ul><li><a href="">Sobre el sitio web</a></li>
+                                <ul class="list-element"><li><a href="">Sobre el sitio web</a></li>
                                     <li><a href="">Sobre juegos</a></li>
                                    </ul></div>
                     <div class="footer-element"><h3>Nuestras Redes</h3>

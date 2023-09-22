@@ -63,24 +63,131 @@ panelBtn3.addEventListener("mouseout", function() {
 });
 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   const cartButton = document.getElementById("panelBtn2");
+//   const cartMenu = document.getElementById("cartMenu");
+
+//   cartButton.addEventListener("click", function(e) {
+//     e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+//     const computedStyle = window.getComputedStyle(cartMenu);
+//     if (computedStyle.display === "none") {
+//       cartMenu.style.display = "block"; // Mostrar el menú
+//     } else {
+//       cartMenu.style.display = "none"; // Ocultar el menú
+//     }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cartButton = document.getElementById("panelBtn2");
+  const cartMenu = document.getElementById("cartMenu");
+  const backgroundOverlay = document.querySelector('.backgroundOverlay');
 
 
-const slides = document.querySelectorAll('.slide')
+  document.addEventListener("click", function(e) {
+    if (cartMenu.style.display === "block" && !cartButton.contains(e.target) && !cartMenu.contains(e.target)) {
+      cartMenu.style.display = "none"; // Ocultar el menú cuando se hace clic fuera de él
+    }
+  });
+
+  cartButton.addEventListener("click", () => {
+    backgroundOverlay.classList.add('overlayActive');
+  })
+
+  cartButton.addEventListener("click", function(e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+    if (cartMenu.style.display === "none" || cartMenu.style.display === "") {
+      cartMenu.style.display = "block"; // Mostrar el menú
+    } else {
+      cartMenu.style.display = "none"; // Ocultar el menú
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const favButton = document.getElementById("panelBtn");
+  const favMenu = document.getElementById("favMenu");
+  const backgroundOverlay = document.querySelector('.backgroundOverlay');
+
+  document.addEventListener("click", function(e) {
+    if (favMenu.style.display === "block" && !favButton.contains(e.target) && !favMenu.contains(e.target)) {
+      favMenu.style.display = "none"; // Ocultar el menú cuando se hace clic fuera de él
+    }
+    
+  });
+
+  favButton.addEventListener("click", () => {
+    backgroundOverlay.classList.add('overlayActive');
+  })
+
+  favButton.addEventListener("click", function(e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+    if (favMenu.style.display === "none" || favMenu.style.display === "") {
+      favMenu.style.display = "block"; // Mostrar el menú
+    } else {
+      favMenu.style.display = "none"; // Ocultar el menú
+    }
+  });
+});
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const favButton = document.getElementById("panelBtn");
+//   const favMenu = document.getElementById("favMenu");
+  
+
+
+//   favButton.addEventListener("click", function(e) {
+//     e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+//     const computedStyle2 = window.getComputedStyle(favMenu);
+//     if (computedStyle2.display === "none") {
+//       favMenu.style.display = "block"; // Mostrar el menú
+//     } else {
+//       favMenu.style.display = "none"; // Ocultar el menú
+//     } 
+//   });
+// });
+
+// const slides = document.querySelectorAll('.slide')
+
+// for (const slide of slides) {
+//     slide.addEventListener('click', () => {
+//       clearActiveClasses()
+      
+      
+//       slide.classList.add('active')
+//     })
+// }
+
+// function clearActiveClasses() {
+//     slides. forEach((slide) => {
+//         slide. classList. remove('active')
+//     })
+// }
+
+
+const slides = document.querySelectorAll('.slide');
 
 for (const slide of slides) {
-    slide.addEventListener('click', () => {
-      clearActiveClasses()
-      
-      
-      slide.classList.add('active')
-    })
+  slide.addEventListener('click', () => {
+    if (window.innerWidth > 850) { // Verificar si el ancho de la página es mayor que 850px
+      clearActiveClasses();
+      slide.classList.add('active');
+    }
+  });
 }
 
 function clearActiveClasses() {
-    slides. forEach((slide) => {
-        slide. classList. remove('active')
-    })
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  });
 }
+
 
 
 /* Contador de Inicio un solo uso */
@@ -1085,6 +1192,43 @@ elementosSubLi6.forEach((elemento, index) => {
       });
     }
   });
+});
+
+// Establecer la fecha objetivo (cuenta regresiva)
+var targetDate = new Date("September 30, 2023 00:00:00").getTime();
+  
+// Actualizar el contador cada segundo
+setInterval(function() {
+  // Obtener la fecha y hora actual
+  var now = new Date().getTime();
+
+  // Calcular la diferencia entre la fecha objetivo y la fecha actual
+  var difference = targetDate - now;
+
+  // Calcular los días, horas, minutos y segundos restantes
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  // Actualizar los elementos HTML con los valores calculados
+  document.getElementById("days").innerText = formatNumber(days);
+  document.getElementById("hours").innerText = formatNumber(hours);
+  document.getElementById("minutes").innerText = formatNumber(minutes);
+  document.getElementById("seconds").innerText = formatNumber(seconds);
+}, 1000);
+
+// Función para formatear los números a dos dígitos (agregar un cero al principio si es necesario)
+function formatNumber(number) {
+  return number < 10 ? "0" + number : number;
+}
+
+var closePopUp = document.querySelector(".close-popup");
+
+// Agregar un evento de clic al botón de cierre
+closePopUp.addEventListener("click", function() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
 });
 // const elementosLi = document.querySelectorAll('.mainMenu ul li');
 // const pruebaEstilo = document.querySelector('.pruebaEstilo');

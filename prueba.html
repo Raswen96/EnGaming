@@ -5,125 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     
     <title>Document</title>
 </head>
 <body>
     
 
-  <button id="myButton">Mover</button>
-<div class="acordeon">
-  <img src="https://picsum.photos/200/300" alt="">
-</div>
 
-<button id="translateBtn">Mover</button>
-<div class="container">
-  <div class="layer1 fondo"><p class="text">PRUEBA ENEBA</p></div>
- 
-</div>
-
-<style>
+  <body>
+   
 
 
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Carrito de Compras</h1>
 
-.acordeon {
-  position: relative;
+  <div class="product">
+    <img src="product1.jpg" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p>Precio: $10</p>
+    <button class="add-to-cart" data-price="10">Agregar al carrito</button>
+  </div>
+
+  <div class="product">
+    <img src="product2.jpg" alt="Producto 2">
+    <h3>Producto 2</h3>
+    <p>Precio: $15</p>
+    <button class="add-to-cart" data-price="15">Agregar al carrito</button>
+  </div>
+
+  <div class="product">
+    <img src="product3.jpg" alt="Producto 3">
+    <h3>Producto 3</h3>
+    <p>Precio: $20</p>
+    <button class="add-to-cart" data-price="20">Agregar al carrito</button>
+  </div>
+
+  <h2>Carrito de Compras</h2>
+  <ul id="cart"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <style>
+
+
+
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.acordeon img {
-  max-width: 10%;
-  height: 300px;
-  transition: transform 0.5s ease;
+.product img {
+  width: 100px;
+  height: 100px;
 }
 
-.acordeon.move img {
-  transform: translateX(100%) scale(0.8);
+button.add-to-cart {
+  display: block;
+  margin-top: 10px;
 }
 
-.container {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
-  transition: transform 0.5s ease;
-  background-color: aquamarine;
+h2 {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+    </style>
+
   
-}
+    <script>
+      
+      
+      
+      document.addEventListener("DOMContentLoaded", function() {
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+  const cart = document.getElementById("cart");
 
-.layer1, .layer2, .layer3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.layer1 {
-  background-color: rgb(132, 0, 255);
-  transition: 0.2s ease-in-out;
-  transform: translateX(300px);
-  max-width: 50%;
-  letter-spacing: -5px;
-}
-
-.layer1-translated {
-  transform: translateX(0px);
-  max-width: 120%;
-  height: 300px;
-  transition: 0.2s ease-in-out;
-  letter-spacing: 0px;
-}
-
-.layer2 {
-  background-color: green;
-}
-
-.layer3 {
-  background-color: blue;
-}
-
-.text {
-  color: white;
-  font-size: 15px;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
-
-</style>
-
-<script>
- const acordeon = document.querySelector('.acordeon');
-const myButton = document.querySelector('#myButton');
-
-myButton.addEventListener('click', () => {
-  acordeon.classList.toggle('move');
+  addToCartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      const price = button.getAttribute("data-price");
+      const name = button.previousElementSibling.innerText;
+      const item = document.createElement("li");
+      item.innerText = name + " - $" + price;
+      cart.appendChild(item);
+    });
+  });
 });
 
 
-const translateBtn = document.getElementById('translateBtn');
-const layer1 = document.querySelector('.layer1');
 
-translateBtn.addEventListener('click', () => {
-  layer1.classList.toggle('layer1-translated');
-});
 
-// const translateBtn = document.getElementById('translateBtn');
-// const container = document.querySelector('.layer1');
-
-// let isTranslated = false;
-
-// translateBtn.addEventListener('click', () => {
-//   if (isTranslated) {
-//     container.style.transform = 'translateX(400px)';
-//     isTranslated = false;
-//   } else {
-//     container.style.transform = 'translateX(0px)';
-//     isTranslated = true;
-//   }
-// });
-</script>
-
+    </script>
+  </body>
+  </html>
 
 </body>
 </html>
